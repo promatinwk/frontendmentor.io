@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: "Spartan", sans-serif;
+}
+
+body{
+    height: 200vh;
+    background-image: url('images/bg-pattern-bottom-mobile.svg'), url('images/bg-pattern-top-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: bottom, top;
+}
+
+    #content{
+     height: 100%;   
+     display: flex;
+     flex-direction: column;
+     width: 90%;
+     position: relative;
+     left: 50%;
+     transform: translateX(-50%);
+    }
+
+    #head{
+        flex-basis: 50vh;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .header{
+            padding: 5%;
+            color: hsl(300, 43%, 22%);
+            font-size: 3.0rem;
+            font-weight: 700;
+        }
+
+        .description{
+            color: hsl(303, 10%, 53%);
+            font-size: 1.5rem;
+        }
+
+
+
+    #ratings{
+        flex-basis: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+        .rate{
+            flex-basis: 20%;
+            margin-top: 5%;
+            background-color: hsl(300, 24%, 96%);
+            border-radius: 20px;
+        }
+
+         .stars{
+             height: 60%;
+             text-align: center;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+         }
+
+            .stars span{
+                display: inline-block;
+                text-align: center;
+                padding-right: 2%;
+            }
+        .rate p{
+            height: 40%;
+            text-align: center;
+            font-size: 1.2rem;
+            color:hsl(300, 43%, 22%) ;
+            font-weight: 700;
+            
+        }
+    
+        #opinions{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+            .buyer{
+                flex-basis: 30%;
+                margin-top: 3%;
+                background-color: hsl(300, 43%, 22%);
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+                .user{
+                    flex-basis: 35%;
+                    display: flex;
+                    padding: 5%;
+                }
+
+                    .photo1{
+                        width: 50px;
+                        height: 50px;
+                        background-size: contain;
+                        background-image: url('images/image-colton.jpg');
+                        border-radius: 50%;
+                        margin-right: 5%;
+                    }
+
+                    .photo2{
+                        width: 50px;
+                        height: 50px;
+                        background-size: contain;
+                        background-image: url('images/image-irene.jpg');
+                        border-radius: 50%;
+                        margin-right: 5%;
+                    }
+
+                    .photo3{
+                        width: 50px;
+                        height: 50px;
+                        background-size: contain;
+                        background-image: url('images/image-anne.jpg');
+                        background-repeat: no-repeat;
+                        border-radius: 50%;
+                        margin-right: 5%;
+                    }
+
+                    .names{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                    }
+
+                        .name{
+                            color: white;
+                            font-size: 1.2rem;
+                            font-weight: 500;
+                            margin-bottom: 5%;
+                        }
+
+                        .verify{
+                            color:hsl(333, 80%, 67%) ;
+                            font-size:1.1rem;
+                        }
+
+                .buyer p{
+                    margin-top: 5%;
+                    flex-basis: 60%;
+                    color: white;
+                    padding-left: 5%;
+                    padding-right: 10%;
+                    font-size: 1.4rem;
+                }
+
+
+        /*media*/
+
+        @media all and (min-width: 1000px) and (orientation:landscape){
+            body{
+                height: 100vh;
+                overflow: hidden;
+                background-image: url('images/bg-pattern-top-desktop.svg'), url('images/bg-pattern-bottom-desktop.svg');
+                background-position: left top, right bottom;
+
+            }
+
+                #content{
+                    height: 100%;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    
+                }
+
+                #head{
+                    flex-basis: 45%;
+                    height: 50%;
+                    text-align: left;
+                    padding-left: 10%;
+                    padding-top: 7%;
+                }
+
+                    .header{
+                        padding: 0%;
+                        font-size: 4.8rem;
+                            margin-bottom: 5%;
+                    }
+
+                    .description{
+                        line-height: 150%;
+                        margin-right: 10%;
+                    }
+
+                #ratings{
+                    flex-basis: 45%;
+                    height: 50%;
+                    margin-left: 10%;
+                }
+
+                    .rate{
+                        width: 70%;
+                        flex-basis: 15%;
+                        display: flex;
+                        align-items: center;    
+                                            
+                    }
+
+                    .rate .stars{
+                        flex-basis: 40%;
+                    }
+
+                        .stars span{
+                            margin-right: 3%;
+                        }
+
+                    
+                    .rateno2{
+                        margin-left: 10%;
+                    }
+
+                    .rateno3{
+                        margin-left: 20%;
+                    }
+                    
+
+                #opinions{
+                    flex-basis: 100%;
+                    height: 50%;
+                    flex-direction: row;
+
+                }
+
+                    .buyer{
+                        flex-basis: 30%;
+                        margin-left: 3%;
+                        height: 60%;
+                    }
+
+                        .user{
+                            padding-top: 10%;
+                            padding-left: 10%;
+                        }
+
+                        .buyer p{
+                            margin-top: 0;
+                            line-height: 150%;
+                            word-spacing: 10%;
+                        }
+                            .no2{
+                                margin-top:5%;
+                            }
+
+                            .no3{
+                                margin-top:7%;
+                            }
+        }
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+.attribution {
+    display: none;
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
