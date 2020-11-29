@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    font-size: 10px;
+}
+
+
+body{
+    background-color: hsl(204, 43%, 93%);
+    height: 160vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+    #content{
+        height: 130vh;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+        #join{
+            flex-basis: 50vh;
+            display: flex;
+            flex-direction: column;
+            background-color:white;
+            
+        }
+            #join p{
+                margin-left: 10%;
+                margin-right: 10%;
+                
+            }
+
+                .header{
+                    color: hsl(179, 62%, 43%);
+                    font-size: 2.3rem;
+                    flex-basis:15%;
+                    margin-top: 10%;
+                    
+                }
+
+
+                .trial{
+                    color: hsl(71, 73%, 54%);
+                    font-size: 1.8rem;
+                    flex-basis: 15%;
+                    margin-bottom: 5%;
+                }
+
+                .description{
+                    color: hsl(218, 22%, 67%);
+                    font-size: 1.6rem;
+                    flex-grow: 1;
+                    word-spacing: 5px;
+                }
+
+        #subscription{
+            flex-basis: 80vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+            .monthlySub{
+                background-color: hsl(179, 62%, 43%);
+                flex-basis:30vh;
+                display: flex;
+                flex-direction: column;
+                
+            }
+
+            .monthlySub p, .whyUs p{
+                padding-left:5%;
+            }
+
+            .headerSc{
+                color: white;
+                flex-basis: 10%;
+                margin-bottom: 5%;
+                margin-top: 5%;
+                font-size: 2.3rem;
+            }
+
+            .monthlyPayment{
+                    color:hsl(204, 43%, 93%); 
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    flex-basis: 10%;
+                    
+
+                }
+
+                .monthlyPayment span{
+                        font-size: 2.6rem;
+                        font-weight: 700;
+
+                    }
+
+            .perDay{
+                font-size: 1.3rem;
+                color:hsl(204, 43%, 93%) ;
+                flex-basis:20%;
+                margin-top: 2%;
+            }
+
+            .sign{
+                flex-basis: 20%;
+                width: 80%;
+                align-self: center;
+                font-size: 1.4rem;
+                color:hsl(204, 43%, 93%) ;
+                background-color: hsl(71, 73%, 54%);
+                border: 1px solid hsl(71, 73%, 54%);
+                border-radius: 3%;
+                box-shadow: 0px 3px 20px 2px grey;
+                cursor: pointer;
+            }
+
+                .whyUs{
+                    flex-grow: 1;
+                    display: flex;
+                    background-color:   hsl(179, 48%, 56%);
+                    flex-direction: column;
+                 }
+
+                 .headerTh{
+                     flex-basis: 20%;
+                     color: white;
+                     font-size: 2.3rem;
+                     margin-bottom: 5%;
+                     margin-top: 5%;
+                 }
+
+                 .dsc{
+                     margin-right: 30%;
+                     font-size: 1.6rem;
+                     color: white;
+                 }
+
+
+
+
+
+
+
+
+
+
+
+.attribution { 
+    display: none;
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+ }
+
+
+ @media all and (min-width: 1040px) and (orientation: landscape){
+     body{
+         height: 100vh;
+         overflow: hidden;
+     }
+
+     #content{
+        height: 70vh;
+        width: 50%;
+     }
+
+        #join{
+            flex-basis: 40%;
+        }
+            #join p{
+                margin-left: 5%;
+                margin-right: 15%;
+            }
+
+                .header{
+                    margin-top: 5%;
+                    margin-bottom: 3%;
+                    
+                }
+
+                .trial{
+                    margin-bottom: 0%;
+                }
+        #subscription{
+            flex-basis: 60%;
+            flex-direction: row;
+            
+        }  
+                 .sign{
+                     margin-top: 10%;
+                    }
+
+                .monthlyPayment{
+                    font-size: 1.8rem;
+                }
+                .monthlyPayment span{
+                    font-size: 2.6rem;
+                }
+
+                .perDay{
+                    font-size: 1.8rem;
+                }
+
+        
+        
+            .monthlySub, .whyUs{
+                flex-basis: 50%;
+                padding: 2%;
+            }
+            
+            .monthlySub p, .whyUs p{
+                padding-left:10%;
+            
+            }
+
+            .dsc{
+                margin-right:30%;
+                line-height: 180%;
+                }
+
+            .headerTh{
+                margin-bottom: 0%;
+            }
+
+            
+
+            
+ }
